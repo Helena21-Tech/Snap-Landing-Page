@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-sm phone:py-4 md:px-8  bg-alwhite text-algray">
+  <header class="lg:flex items-center mt-4 phone:px-4 md:mx-0 relative">
+    <img src="./images/logo.svg" class="self-center" alt="logo">
+    <img src="./images/icon-menu.svg" alt="open menu" id="openMenu" class="icon phone:inline ">
+    <img src="./images/icon-close-menu.svg" alt=" close menu" id="closeMenu" class=" icon z-20">
+    <nav id="nav" class="lg:flex justify-between items-center lg:w-full lg:relative lg:bg-alwhite lg:h-auto lg:top-0 mobileNav">
+      <ul class="lg:flex phone:block lg:pt-0 phone:pt-20 lg:px-12 phone:px-4 cursor-pointer hover:text-alblack">
+        <div>
+          <button class="px-4 lg:py-0 phone:pt-4">Features <img src="./images/icon-arrow-down.svg" id="openFeatures" class="inline px-2.5" alt="dropdown">
+          <img src="./images/icon-arrow-up.svg" id="closeFeatures"  class="hidden px-2.5" alt="dropdown open ">
+        </button>
+          <div id="Features" class="bg-white px-4 py-2 lg:absolute lg:mt-4 rounded-xl lg:-left-4 hidden">
+            <ul>
+              <li class="px-2 py-1 pl-1 flex items-center"><img src="./images/icon-todo.svg" alt="todo image" class="ml-1"><a href="#" class="pl-1"> Todo List </a></li>
+              <li class="px-2 py-1 flex items-center"><img src="./images/icon-calendar.svg" alt="Calender image"><a href="#" class="ml-1">Calender </a></li>
+              <li class="px-2 py-1 flex items-center"><img src="./images/icon-reminders.svg" alt="reminder image"><a href="#" class="ml-1"> Reminders </a></li>
+              <li class="px-2 py-1 flex items-center"><img src="./images/icon-planning.svg" alt="planning image"><a href="#" class="ml-1"> Planning
+              </a></li>
+            </ul>
+          </div>
+        </div>
+        <div >
+          <button class="px-4 lg:py-0 phone:pt-4">Company
+            <img src="./images/icon-arrow-down.svg" id="openCompany" class="inline  px-1" alt="dropdown">
+          <img src="./images/icon-arrow-up.svg" id="closeCompany" class="hidden  px-1" alt="dropdown open">
+        </button>
+          <div id="Company" class="bg-white px-4 py-2 lg:absolute lg:mt-4 rounded-xl hidden">
+            <ul>
+              <li class="px-2 py-1"><a href="#">History</a></li>
+              <li class="px-2 py-1"><a href="#">Our team</a></li>
+              <li class="px-2 py-1"><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+        <li class="px-4 lg:py-0 phone:pt-4"><a href="#">Careers</a></li>
+        <li class="px-4 lg:py-0 phone:pt-4"><a href="#">About</a></li>
+      </ul>
+      <div class="lg:flex phone:block justify-end phone:px-4 cursor-pointer hover:text-alblack lg:px-0 ">
+        <button class="mr-8 button lg:py-0 ">Login</button>
+        <button class="button lg:py-2 border-solid border border-black rounded-xl">Register</button>
+      </div>
+    </nav>
+  </header>
+  <main class="phoneLg:my-20 phone:my-8 md:mx-20 relative lg:text-left phone:text-center  phone:mx-auto lg:w-full sm:w-3/4 phone:w-full">
+    <div class="lg:flex flex-row-reverse phone:block sm:mx-0 phoneLg:mx-12 phone:mx-4" >
+      <picture class=" lg:w-1/2 lg:px-0 phone:px-12 phone:w-full ">
+        <source  media="(max-width: 1440px)" srcset="./images/image-hero-desktop.png">
+        <source media="(max-width: 370px)" srcset="./images/image-hero-mobile,png">
+        <img src="./images/image-hero-desktop.png" class="lg:h-full xl:h-3/4 lg:mt-4 phone:h-1/2 lg:w-4/5 phone:w-full " alt="page image">
+      </picture>
+      <div class="lg:w-1/2 phone:w-full lg:pt-32 phone:pt-24 lg:pr-28 phone:mx-auto">
+        <h1 class="lg:text-7xl phoneLg:text-5xl phone:text-4xl font-bold text-alblack">Make remote work</h1>
+        <p class="lg:text-xl md:text-base phone:text-xl my-4">Get your team in sync, no matter your location. Streamline processes, 
+  create team rituals, and watch productivity soar.</p>
+        <button class="bg-black px-8 py-4 text-alwhite rounded-xl my-8 text-sm cursor-pointer hover:bg-white hover:border hover:border-solid hover:border-black hover:text-black">Learn more </button>
+        <div class="flex justify-between mt-4">
+          <img src="./images/client-databiz.svg" alt="databiz" class="w-16">
+          <img src="./images/client-audiophile.svg" alt="audiophile" class="w-16">
+          <img src="./images/client-meet.svg" alt="meet" class="w-16">
+          <img src="./images/client-maker.svg" alt="maker" class="w-16">
+        </div>
+      </div>
+    </div>
+  </main>
+ <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>-->
+  <script src="app.js"></script>
+</body>
+</html>

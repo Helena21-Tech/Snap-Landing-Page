@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.icon{
+  @apply w-4 h-4 hidden absolute top-0 right-8;
+}
+.button{
+  @apply lg:inline phone:block phone:w-full px-4 phone:py-4;
+}
+.mobileNav{
+  @apply phone:hidden phone:bg-white phone:w-halfscreen phone:h-screen phone:absolute phone:-top-8 phone:right-0 phone:z-10;
+}
